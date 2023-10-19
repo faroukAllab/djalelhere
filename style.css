@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Forum&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Playfair Display', serif; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    
+}
+/* navigation bark here  */
+header{
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 2%;
+    position: fixed;
+    width: 100% ;
+    height: 9rem;
+    backdrop-filter: blur(30px);
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.navigation{
+    color:#D6CC99;
+    font-family: 'Alice', serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0.8rem;
+    transition: .5s;
+
+}
+.a{
+    font-size: 1.5rem;
+}
+.navigation:hover{
+    color: #445D48;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+#menu-icon{
+    font-size: 3rem;
+    color: #D6CC99;
+    cursor: pointer;
+    display: none;
+
+}
+.logo{
+    margin-right: 15%;
+    font-family: 'Playfair Display', serif;
+    color: #D6CC99;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+:root{
+    -one: #001524;
+    -two: #445D48;
+    -three: #D6CC99;
+    -four: #FDE5D4;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background: #001524;
+    color: #D6CC99;
+    text-align: center;
+}
+.me{
+    height: 4rem;
+}
+
+/* home design  */
+
+section{
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 0 5%;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('./images/wwwwwwwblurwithedit.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-position-y: 9rem;
+    transition: all 1s ease-in-out;
+}
+
+.home:hover{
+    background: url('./images/wwwwwwwwithedit.jpg') no-repeat ;
+    background-size:cover;
+    background-position: bottom center;
+    background-position-y: 9rem;
+    transition:all 1s ease-in-out;
+} 
+@media screen and (max-width: 900px){
+    .home{
+        background-size:cover ;
+        background-position-y: 9rem;
+        
+    }
+    .home:hover{
+        background-size: cover;
+        background-position-y: 9rem;
+    }
+}
+.home-title{
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-shadow: 3px 3px 5px black;
+
+}   
+.red{
+    color: #445D48;
+    text-shadow: 3px 3px 5px black;
+}
+.home-content{
+    max-width: 60rem ;
+
+}
+.animatetxt p{
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin: 2%;
+    text-shadow: 5px 3px 1px black;
+
+}
+
+.btn{
+    position: fixed;
+    line-height: 0cm;
+    margin: 5%;
+    padding: 1%;
+    font-size: 1.6rem;
+    background-color: #FDE5D4;
+    color: #001524;
+    border-radius: 100%;
+    border: 3px solid #FDE5D4;
+    right: 10px;
+    bottom: 10px;
+    overflow:hidden;
+    
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background: #001524;
+    border-radius: 100%;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    transition: .5s;
+
+}
+.btn:hover:before{
+    height: 100%;
+    width: 100%;
+
+}
+.btn:hover{
+    color: #FDE5D4;
+}
+
+/* design of portfolio */
+
+.portfolio-title{
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px black;
+}
+
+
+
+/* font-family: 'Alice', serif;
+font-family: 'Forum', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; */
